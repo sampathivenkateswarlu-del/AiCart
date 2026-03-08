@@ -1319,6 +1319,10 @@ body {
     html, body {
         overflow-x: hidden;
     }
+    .menu-toggle {
+        /* ensure visible even if parent changes */
+        display: block !important;
+    }
 
     .header .container {
         flex-direction: column;
@@ -1329,16 +1333,20 @@ body {
         align-items: flex-start; /* ensure items stack left */
     }
     .menu-toggle {
-        display: block;
+        display: block !important;
         font-size: 28px;
         cursor: pointer;
         color: #0B3C5D;
+        background: #FFFFFF;
+        padding: 6px 8px;
+        border-radius: 4px;
         /* position top-left now */
         position: absolute;
         top: 10px;
         left: 15px;
         right: auto;
         margin-right: 0;
+        z-index: 2000; /* make sure it sits above other header elements */
     }
     .nav {
         width: 100%;
