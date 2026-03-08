@@ -1340,12 +1340,11 @@ body {
         background: #FFFFFF;
         padding: 6px 8px;
         border-radius: 4px;
-        /* position top-left now */
+        /* position top-right for easier visibility */
         position: absolute;
         top: 10px;
-        left: 15px;
-        right: auto;
-        margin-right: 0;
+        right: 15px;
+        left: auto;
         z-index: 2000; /* make sure it sits above other header elements */
     }
     .nav {
