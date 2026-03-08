@@ -7,7 +7,7 @@ const products = [
         originalPrice: 129.99,
         discount: "23% off",
         rating: 4.5,
-        image: "/images/WirelessHeadphones.jpg",
+        image: "images/WirelessHeadphones.jpg",
         category: "electronics",
         description: "High-quality wireless headphones with noise cancellation."
     },
@@ -18,7 +18,7 @@ const products = [
         originalPrice: 249.99,
         discount: "20% off",
         rating: 4.7,
-        image: "/images/SmartWatch.jpg",
+        image: "images/smartwatch.jpg",
         category: "electronics",
         description: "Feature-packed smart watch with health tracking."
     },
@@ -29,7 +29,7 @@ const products = [
         originalPrice: 99.99,
         discount: "20% off",
         rating: 4.3,
-        image: "/images/RunningShoes.jpg",
+        image: "images/runningshoes.jpg",
         category: "sports",
         description: "Comfortable running shoes for all terrains."
     },
@@ -40,7 +40,7 @@ const products = [
         originalPrice: 69.99,
         discount: "29% off",
         rating: 4.2,
-        image: "/images/CoffeeMaker.jpg",
+        image: "images/CoffeeMaker.jpg",
         category: "home",
         description: "Automatic coffee maker for perfect brew every time."
     },
@@ -51,7 +51,7 @@ const products = [
         originalPrice: 29.99,
         discount: "33% off",
         rating: 4.0,
-        image: "/images/TShirt.jpeg",
+        image: "images/TShirt.jpeg",
         category: "fashion",
         description: "Comfortable cotton t-shirt in various colors."
     },
@@ -62,7 +62,7 @@ const products = [
         originalPrice: 19.99,
         discount: "25% off",
         rating: 4.6,
-        image: "/images/NovelBook.jpg",
+        image: "images/novelbook.jpg",
         category: "books",
         description: "Bestselling novel by a renowned author."
     }
@@ -76,7 +76,7 @@ const flashSaleDeals = [
         originalPrice: 89.99,
         price: 49.99,
         discount: "44% OFF",
-        image: "/images/WirelessHeadphones.jpg",
+        image: "images/WirelessHeadphones.jpg",
         rating: 4.5,
         timeLeft: "02:15:30"
     },
@@ -86,7 +86,7 @@ const flashSaleDeals = [
         originalPrice: 199.99,
         price: 129.99,
         discount: "35% OFF",
-        image: "/images/SmartFitnessWatch.jpg",
+        image: "images/SmartFitnessWatch.jpg",
         rating: 4.7,
         timeLeft: "01:45:20"
     },
@@ -96,7 +96,7 @@ const flashSaleDeals = [
         originalPrice: 149.99,
         price: 99.99,
         discount: "33% OFF",
-        image: "/images/GamingKeyboard.jpg",
+        image: "images/GamingKeyboard.jpg",
         rating: 4.6,
         timeLeft: "03:20:15"
     }
