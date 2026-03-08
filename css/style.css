@@ -1325,16 +1325,24 @@ body {
         gap: 10px;
         width: 100%;
         padding: 10px 15px;
+        position: relative; /* for absolute toggle */
+        align-items: flex-start; /* ensure items stack left */
     }
     .menu-toggle {
         display: block;
         font-size: 28px;
         cursor: pointer;
         color: #0B3C5D;
-        margin-right: 15px;
+        /* position top-left now */
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        right: auto;
+        margin-right: 0;
     }
     .nav {
         width: 100%;
+        box-sizing: border-box;
     }
     .nav ul {
         display: none;
@@ -1342,6 +1350,7 @@ body {
         width: 100%;
         background-color: #ffffff;
         padding: 10px 0;
+        margin-top: 40px; /* avoid overlapping toggle */
     }
     .nav.open ul {
         display: flex;
@@ -1353,7 +1362,9 @@ body {
 
     .search-bar {
         margin: 0;
+        width: 100%;
         max-width: none;
+        order: 2; /* place below toggle */
     }
 
     .nav ul {
