@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - AiCart</title>
+    <meta name="description" content="Browse categories on AiCart.">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories-page">
+            <div class="container">
+                <h1>Shop by Category</h1>
+                <div class="category-grid">
+                    <a href="products.html?category=electronics" class="category-card">
+                        <img src="/images/electronics.webp" alt="Electronics">
+                        <h3>Electronics</h3>
+                    </a>
+                    <a href="products.html?category=fashion" class="category-card">
+                        <img src="/images/fashion.jpg" alt="Fashion">
+                        <h3>Fashion</h3>
+                    </a>
+                    <a href="products.html?category=home" class="category-card">
+                        <img src="/images/kichenhome.jpg" alt="Home & Kitchen">
+                        <h3>Home & Kitchen</h3>
+                    </a>
+                    <a href="products.html?category=beauty" class="category-card">
+                        <img src="/images/beauty.webp" alt="Beauty">
+                        <h3>Beauty</h3>
+                    </a>
+                    <a href="products.html?category=sports" class="category-card">
+                        <img src="/images/sport.jpg" alt="Sports">
+                        <h3>Sports</h3>
+                    </a>
+                    <a href="products.html?category=books" class="category-card">
+                        <img src="/images/books.jpg" alt="Books">
+                        <h3>Books</h3>
+                    </a>
+                    <a href="products.html?category=accessories" class="category-card">
+                        <img src="/images/Accessories.jpg" alt="Accessories">
+                        <h3>Accessories</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="helpcenter.html">Help Center</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

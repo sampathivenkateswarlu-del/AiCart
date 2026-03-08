@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – AiCart Customer Support</title>
+    <meta name="description" content="Get in touch with AiCart. Contact our customer support team for questions, feedback, or assistance with your orders.">
+    <meta name="keywords" content="contact AiCart, customer support, help, feedback, customer service">
+    <meta property="og:title" content="Contact Us - AiCart">
+    <meta property="og:description" content="Reach out to AiCart for support, questions, or feedback.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: linear-gradient(135deg, #0B3C5D 0%, #FF7A00 100%);">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're Here to Help</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h3>📧 Email Support</h3>
+                                <p><strong>General Inquiries:</strong> support@aicart.com</p>
+                                <p><strong>Business Partnerships:</strong> partnerships@aicart.com</p>
+                                <p><strong>Press Inquiries:</strong> press@aicart.com</p>
+                                <p><strong>Response Time:</strong> Within 24 hours</p>
+                            </div>
+
+                            <div class="contact-method">
+                                <h3>📞 Phone Support</h3>
+                                <p><strong>Customer Service:</strong> +1 (555) 123-4567</p>
+                                <p><strong>Business Hours:</strong> Mon-Fri 9AM-6PM PST</p>
+                                <p><strong>Emergency Support:</strong> 24/7 for urgent issues</p>
+                            </div>
+
+                            <div class="contact-method">
+                                <h3>📍 Office Address</h3>
+                                <p><strong>Headquarters:</strong></p>
+                                <p>123 Tech Street<br>
+                                Silicon Valley, CA 94025<br>
+                                United States</p>
+                            </div>
+
+                            <div class="contact-method">
+                                <h3>💬 Live Chat</h3>
+                                <p><strong>Available:</strong> 24/7</p>
+                                <p><strong>Average Response:</strong> 2 minutes</p>
+                                <p><strong>Languages:</strong> English, Spanish, French</p>
+                            </div>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3>🕒 Business Hours</h3>
+                            <div class="hours-grid">
+                                <div class="day">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 6:00 PM PST</span>
+                                </div>
+                                <div class="day">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 4:00 PM PST</span>
+                                </div>
+                                <div class="day">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </div>
+                                <div class="day">
+                                    <span>Holidays</span>
+                                    <span>Limited Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-connect">
+                            <h3>Follow Us</h3>
+                            <p>Stay connected and get the latest updates:</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Send us a Message</h2>
+                        <form id="contact-form" name="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="order">Order Inquiry</option>
+                                    <option value="shipping">Shipping & Delivery</option>
+                                    <option value="returns">Returns & Refunds</option>
+                                    <option value="product">Product Information</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="billing">Billing & Payments</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="partnership">Business Partnership</option>
+                                    <option value="press">Press Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="order-number">Order Number (if applicable)</label>
+                                <input type="text" id="order-number" name="order-number" placeholder="e.g., AC-123456">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry in detail..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and deals
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                        </form>
+
+                        <div id="form-success" class="form-message success" style="display: none;">
+                            <p>✅ Thank you for your message! We'll get back to you within 24 hours.</p>
+                        </div>
+
+                        <div id="form-error" class="form-message error" style="display: none;">
+                            <p>❌ There was an error sending your message. Please try again or contact us directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section alternate-bg">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>How quickly will I receive a response?</summary>
+                        <p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call our customer service line directly.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I track my order?</summary>
+                        <p>Yes! Once your order ships, you'll receive a tracking number via email. You can also track your order by logging into your account and visiting the "Orders" section.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I return an item?</summary>
+                        <p>Please visit our <a href="returns.html">Returns & Refunds</a> page for detailed instructions, or contact our support team to initiate a return.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you offer international shipping?</summary>
+                        <p>Yes, we ship to over 45 countries worldwide. Visit our <a href="shipping.html">Shipping Policy</a> page for more information about international shipping rates and delivery times.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I update my account information?</summary>
+                        <p>Log into your account and navigate to the "Account Settings" section, or contact our support team for assistance with account updates.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What payment methods do you accept?</summary>
+                        <p>We accept all major credit cards, PayPal, digital wallets, and bank transfers. All transactions are secured with SSL encryption.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Visit Our Office</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>🏢 AiCart Headquarters</h3>
+                            <p>123 Tech Street<br>
+                            Silicon Valley, CA 94025<br>
+                            United States</p>
+                            <p><strong>Directions:</strong> Located in the heart of Silicon Valley, easily accessible by car or public transportation.</p>
+                            <a href="https://maps.google.com/?q=123+Tech+Street+Silicon+Valley+CA+94025" target="_blank" class="btn btn-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">About AiCart</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="helpcenter.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AiCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

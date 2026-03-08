@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - AiCart</title>
+    <meta name="description" content="View product details on AiCart.">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-layout">
+                    <div class="product-images">
+                        <img id="main-image" src="https://via.placeholder.com/400x400?text=Product" alt="Product Image">
+                        <div class="thumbnails">
+                            <img src="/images/wirelessheadphonethumb01.png" alt="Thumb 1">
+                            <img src="/images/wirelessheadphonethumb02.png" alt="Thumb 2">
+                            <img src="/images/wirelessheadphonethumb03.png" alt="Thumb 3">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 id="product-title">Sample Product</h1>
+                        <div class="price">
+                            <span class="current-price" id="current-price">$99.99</span>
+                            <span class="original-price" id="original-price">$129.99</span>
+                            <span class="discount" id="discount">23% off</span>
+                        </div>
+                        <div class="rating" id="rating">
+                            ★★★★☆ (4.5)
+                        </div>
+                        <p id="product-description">This is a detailed description of the product. It includes all the features and benefits.</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" value="1" min="1">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-primary" id="add-to-cart">Add to Cart</button>
+                            <button class="btn btn-secondary" id="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <h2>Customer Reviews</h2>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">John Doe</span>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <p>Great product! Highly recommend.</p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="reviewer">Jane Smith</span>
+                            <div class="review-rating">★★★★☆</div>
+                        </div>
+                        <p>Good quality, fast delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

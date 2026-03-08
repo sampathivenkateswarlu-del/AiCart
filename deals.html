@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - AiCart</title>
+    <meta name="description" content="Shop amazing deals and discounts on AiCart. Flash sales, seasonal promotions, and exclusive offers.">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="deals-hero">
+            <div class="container">
+                <h1>Amazing Deals for You</h1>
+                <p>Save big on your favorite products with exclusive offers and flash sales</p>
+            </div>
+        </section>
+
+        <!--<section class="flash-sales">
+            <div class="container">
+                <div class="section-header">
+                    <h2>⚡ Flash Sales</h2>
+                    <p class="ends-in">Ending in: <span id="countdown">05:30:45</span></p> 
+                </div>
+                <div class="deal-grid" id="flash-sales-container"> -->
+                   
+                <!-- </div> -->
+            <!--</div> -->
+       <!-- </section> -->
+
+        <section class="featured-deals">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🎁 Featured Deals</h2>
+                </div>
+                <div class="featured-deals-grid">
+                    <div class="featured-deal-card">
+                        <div class="deal-badge">Top Deal</div>
+                        <img src="/images/ElectronicsMegaSale.jpg" alt="Deal">
+                        <div class="deal-content">
+                            <h3>Electronics Mega Sale</h3>
+                            <p class="deal-description">Up to 50% off on latest gadgets</p>
+                            <div class="deal-meta">
+                                <span class="discount-percent">50%</span>
+                                <span class="deal-date">Till March 15</span>
+                            </div>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="featured-deal-card">
+                        <div class="deal-badge">Popular</div>
+                        <img src="/images/FashionCollectionSale.jpg" alt="Deal">
+                        <div class="deal-content">
+                            <h3>Fashion Collection Sale</h3>
+                            <p class="deal-description">New arrivals at discounted prices</p>
+                            <div class="deal-meta">
+                                <span class="discount-percent">40%</span>
+                                <span class="deal-date">Till March 20</span>
+                            </div>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="featured-deal-card">
+                        <div class="deal-badge">Trending</div>
+                        <img src="/images/HomeEssentialsDeal.jpg" alt="Deal">
+                        <div class="deal-content">
+                            <h3>Home Essentials Deal</h3>
+                            <p class="deal-description">Quality home products at best prices</p>
+                            <div class="deal-meta">
+                                <span class="discount-percent">35%</span>
+                                <span class="deal-date">Till March 18</span>
+                            </div>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-by-category">
+            <div class="container">
+                <h2>Deals by Category</h2>
+                <div class="category-deals-grid">
+                    <div class="category-deal">
+                        <img src="/images/electronics.webp" alt="Electronics">
+                        <div class="category-deal-info">
+                            <h3>Electronics</h3>
+                            <p>Starting from $49.99</p>
+                            <span class="discount-tag">Up to 60% off</span>
+                        </div>
+                    </div>
+                    <div class="category-deal">
+                        <img src="/images/fashion.jpg" alt="Fashion">
+                        <div class="category-deal-info">
+                            <h3>Fashion</h3>
+                            <p>Starting from $9.99</p>
+                            <span class="discount-tag">Up to 50% off</span>
+                        </div>
+                    </div>
+                    <div class="category-deal">
+                        <img src="/images/kichenhome.jpg" alt="Home">
+                        <div class="category-deal-info">
+                            <h3>Home & Kitchen</h3>
+                            <p>Starting from $19.99</p>
+                            <span class="discount-tag">Up to 55% off</span>
+                        </div>
+                    </div>
+                    <div class="category-deal">
+                        <img src="/images/beauty.webp" alt="Beauty">
+                        <div class="category-deal-info">
+                            <h3>Beauty</h3>
+                            <p>Starting from $14.99</p>
+                            <span class="discount-tag">Up to 45% off</span>
+                        </div>
+                    </div>
+                    <div class="category-deal">
+                        <img src="/images/sport.jpg" alt="Sports">
+                        <div class="category-deal-info">
+                            <h3>Sports</h3>
+                            <p>Starting from $24.99</p>
+                            <span class="discount-tag">Up to 40% off</span>
+                        </div>
+                    </div>
+                    <div class="category-deal">
+                        <img src="/images/Books.jpg" alt="Books">
+                        <div class="category-deal-info">
+                            <h3>Books</h3>
+                            <p>Starting from $5.99</p>
+                            <span class="discount-tag">Up to 35% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-deals">
+            <div class="container">
+                <h2>All Current Deals</h2>
+                <div class="deal-filters">
+                    <select id="deal-category-filter">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="beauty">Beauty</option>
+                        <option value="sports">Sports</option>
+                        <option value="books">Books</option>
+                    </select>
+                    <select id="discount-filter">
+                        <option value="">All Discounts</option>
+                        <option value="10">10% and above</option>
+                        <option value="25">25% and above</option>
+                        <option value="50">50% and above</option>
+                    </select>
+                </div>
+                <div class="deal-grid" id="all-deals-container">
+                    <!-- All deals are dynamically generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-newsletter">
+            <div class="container">
+                <h2>Never Miss a Deal</h2>
+                <p>Subscribe to get exclusive daily deals delivered to your inbox</p>
+                <form class="deals-newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="/images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="/images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="/images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

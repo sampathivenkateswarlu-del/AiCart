@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - AiCart</title>
+    <meta name="description" content="View your order history and track your purchases on AiCart.">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="orders">
+            <div class="container">
+                <h1>Your Orders</h1>
+                <div class="orders-list">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #12345</span>
+                            <span class="order-status delivered">Delivered</span>
+                        </div>
+                        <div class="order-details">
+                            <p><strong>Date:</strong> March 5, 2026</p>
+                            <p><strong>Total:</strong> $149.99</p>
+                            <p><strong>Items:</strong> 2 products</p>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                               <!-- <img src="https://via.placeholder.com/80x80?text=Product1" alt="Product"> -->
+                                <div class="item-info">
+                                    <h4>Wireless Headphones</h4>
+                                    <p>$99.99</p>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                               <!--<img src="https://via.placeholder.com/80x80?text=Product2" alt="Product"> -->
+                                <div class="item-info">
+                                    <h4>Phone Case</h4>
+                                    <p>$49.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn btn-secondary">View Details</button>
+                            <button class="btn btn-primary">Reorder</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #12344</span>
+                            <span class="order-status processing">Processing</span>
+                        </div>
+                        <div class="order-details">
+                            <p><strong>Date:</strong> March 3, 2026</p>
+                            <p><strong>Total:</strong> $89.99</p>
+                            <p><strong>Items:</strong> 1 product</p>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <!--<img src="https://via.placeholder.com/80x80?text=Product3" alt="Product"> -->
+                                <div class="item-info">
+                                    <h4>Running Shoes</h4>
+                                    <p>$89.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn btn-secondary">Track Order</button>
+                            <button class="btn btn-primary">Reorder</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #12343</span>
+                            <span class="order-status delivered">Delivered</span>
+                        </div>
+                        <div class="order-details">
+                            <p><strong>Date:</strong> February 28, 2026</p>
+                            <p><strong>Total:</strong> $199.99</p>
+                            <p><strong>Items:</strong> 3 products</p>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <!-- <img src="https://via.placeholder.com/80x80?text=Product4" alt="Product"> -->
+                                <div class="item-info">
+                                    <h4>Smart Watch</h4>
+                                    <p>$199.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn btn-secondary">View Details</button>
+                            <button class="btn btn-primary">Reorder</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">Order #12342</span>
+                            <span class="order-status shipped">Shipped</span>
+                        </div>
+                        <div class="order-details">
+                            <p><strong>Date:</strong> February 25, 2026</p>
+                            <p><strong>Total:</strong> $79.99</p>
+                            <p><strong>Items:</strong> 1 product</p>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <!--<img src="https://via.placeholder.com/80x80?text=Product5" alt="Product"> -->
+                                <div class="item-info">
+                                    <h4>Coffee Maker</h4>
+                                    <p>$79.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn btn-secondary">Track Order</button>
+                            <button class="btn btn-primary">Reorder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="/images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="/images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="/images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

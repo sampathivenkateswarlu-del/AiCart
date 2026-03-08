@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - AiCart</title>
+    <meta name="description" content="Manage your AiCart account, orders, and preferences.">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="account">
+            <div class="container">
+                <div class="account-layout">
+                    <aside class="account-sidebar">
+                        <div class="account-menu">
+                            <h3>Your Account</h3>
+                            <ul>
+                                <li><a href="#profile" class="menu-link active">Profile</a></li>
+                                <li><a href="#orders" class="menu-link">Orders</a></li>
+                                <li><a href="#addresses" class="menu-link">Addresses</a></li>
+                                <li><a href="#wishlist" class="menu-link">Wishlist</a></li>
+                                <li><a href="#settings" class="menu-link">Settings</a></li>
+                                <li><a href="#logout" class="menu-link logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="account-content">
+                        <!-- Profile Section -->
+                        <div id="profile" class="account-section active">
+                            <h2>Profile Information</h2>
+
+                            <!-- Success/Error Messages -->
+                            <div id="account-success-message" class="message success" style="display: none;"></div>
+                            <div id="account-error-message" class="message error" style="display: none;"></div>
+
+                            <form id="profile-edit-form" class="profile-form">
+                                <div class="form-group">
+                                    <label for="profile-name">Full Name</label>
+                                    <input type="text" id="profile-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-email">Email Address</label>
+                                    <input type="email" id="profile-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-phone">Phone Number</label>
+                                    <input type="tel" id="profile-phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Member Since</label>
+                                    <p>January 2024</p>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Update Profile</button>
+                            </form>
+                        </div>
+
+                        <!-- Orders Section -->
+                        <div id="orders" class="account-section">
+                            <h2>Order History</h2>
+                            <div class="orders-list">
+                                <div class="order-card">
+                                    <div class="order-header">
+                                        <span class="order-id">Order #12345</span>
+                                        <span class="order-status delivered">Delivered</span>
+                                    </div>
+                                    <div class="order-details">
+                                        <p><strong>Date:</strong> March 5, 2026</p>
+                                        <p><strong>Total:</strong> $149.99</p>
+                                        <p><strong>Items:</strong> 2 products</p>
+                                    </div>
+                                    <button class="btn btn-secondary">View Details</button>
+                                </div>
+                                <div class="order-card">
+                                    <div class="order-header">
+                                        <span class="order-id">Order #12344</span>
+                                        <span class="order-status processing">Processing</span>
+                                    </div>
+                                    <div class="order-details">
+                                        <p><strong>Date:</strong> March 3, 2026</p>
+                                        <p><strong>Total:</strong> $89.99</p>
+                                        <p><strong>Items:</strong> 1 product</p>
+                                    </div>
+                                    <button class="btn btn-secondary">Track Order</button>
+                                </div>
+                                <div class="order-card">
+                                    <div class="order-header">
+                                        <span class="order-id">Order #12343</span>
+                                        <span class="order-status delivered">Delivered</span>
+                                    </div>
+                                    <div class="order-details">
+                                        <p><strong>Date:</strong> February 28, 2026</p>
+                                        <p><strong>Total:</strong> $199.99</p>
+                                        <p><strong>Items:</strong> 3 products</p>
+                                    </div>
+                                    <button class="btn btn-secondary">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Addresses Section -->
+                        <div id="addresses" class="account-section">
+                            <h2>Saved Addresses</h2>
+
+                            <div class="addresses-list">
+                                <!-- Shipping Address -->
+                                <div class="address-card">
+                                    <h4>Shipping Address</h4>
+                                    <div class="address-display">
+                                        <p id="shipping-name">John Doe</p>
+                                        <p id="shipping-address">123 Main St, Apt 4B, New York, NY 10001, USA</p>
+                                    </div>
+                                    <div class="address-actions">
+                                        <button id="edit-shipping-btn" class="btn btn-secondary">Edit</button>
+                                    </div>
+                                </div>
+
+                                <!-- Billing Address -->
+                                <div class="address-card">
+                                    <h4>Billing Address</h4>
+                                    <div class="address-display">
+                                        <p id="billing-name">John Doe</p>
+                                        <p id="billing-address">123 Main St, Apt 4B, New York, NY 10001, USA</p>
+                                    </div>
+                                    <div class="address-actions">
+                                        <button id="edit-billing-btn" class="btn btn-secondary">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address Edit Form (Hidden by default) -->
+                            <div id="address-edit-form" class="address-form" style="display: none;">
+                                <h3 id="address-form-title">Edit Address</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="address-name">Full Name</label>
+                                        <input type="text" id="address-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address-street">Street Address</label>
+                                        <input type="text" id="address-street" name="street" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="address-city">City</label>
+                                            <input type="text" id="address-city" name="city" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address-state">State</label>
+                                            <input type="text" id="address-state" name="state" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="address-zip">ZIP Code</label>
+                                            <input type="text" id="address-zip" name="zip" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address-country">Country</label>
+                                            <input type="text" id="address-country" name="country" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save Address</button>
+                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Section -->
+                        <div id="wishlist" class="account-section">
+                            <h2>Your Wishlist</h2>
+                            <div class="wishlist-items">
+                                <div class="wishlist-item">
+                                    <img src="/images/WirelessHeadphones.jpg" alt="Product">
+                                    <div class="wishlist-info">
+                                        <h4>Wireless Headphones</h4>
+                                        <p class="price">$99.99</p>
+                                        <p class="rating">★★★★★ (4.5)</p>
+                                    </div>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                                <div class="wishlist-item">
+                                    <img src="/images/SmartWatch.jpg" alt="Product">
+                                    <div class="wishlist-info">
+                                        <h4>Smart Watch</h4>
+                                        <p class="price">$199.99</p>
+                                        <p class="rating">★★★★☆ (4.7)</p>
+                                    </div>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                    <button class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Settings Section -->
+                        <div id="settings" class="account-section">
+                            <h2>Account Settings</h2>
+                            <div class="settings-form">
+                                <div class="form-group">
+                                    <label for="notifications">Email Notifications</label>
+                                    <input type="checkbox" id="notifications" checked>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newsletter">Subscribe to Newsletter</label>
+                                    <input type="checkbox" id="newsletter">
+                                </div>
+                                <div class="form-group">
+                                    <label for="marketing">Marketing Emails</label>
+                                    <input type="checkbox" id="marketing">
+                                </div>
+                                <button class="btn btn-primary">Change Password</button>
+                                <button class="btn btn-danger">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="helpcenter.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="/images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="/images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="/images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Account page navigation
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('href').slice(1);
+                
+                // Remove active class from all sections and links
+                document.querySelectorAll('.account-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.querySelectorAll('.menu-link').forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                // Add active class to clicked section and link
+                if (target === 'logout') {
+                    alert('Logged out successfully!');
+                    window.location.href = 'index.html';
+                } else {
+                    document.getElementById(target).classList.add('active');
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

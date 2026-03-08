@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiCart – Smart Online Shopping Marketplace</title>
+    <meta name="description" content="AiCart is a modern online shopping marketplace offering electronics, fashion, home products and more at great prices.">
+    <meta name="keywords" content="online shopping, ecommerce store, marketplace, electronics store, fashion store, AiCart">
+    <meta name="author" content="AiCart">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AiCart – Smart Online Shopping Marketplace">
+    <meta property="og:description" content="Shop smart with AiCart. Discover deals on electronics, fashion, home goods and more.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AiCart Marketplace">
+    <meta name="twitter:description" content="Discover deals and smart shopping on AiCart.">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE">
+    <link rel="icon" href="/images/aicart.ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/aicart.ico.ico" alt="AiCart Logo" class="logo-icon">
+                <span class="logo-text">AiCart</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="search-input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Smart Deals Powered by AI</h1>
+                <p>Save up to 60% on Electronics</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#deals" class="btn btn-secondary">Explore Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals preview section added to satisfy hero anchor -->
+        <section class="deals-preview" id="deals">
+            <div class="container">
+                <h2>Hot Deals</h2>
+                <p>Don't miss our latest offers and flash sales.</p>
+                <a href="deals.html" class="btn btn-secondary">View All Deals</a>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="images/electronics.webp" alt="Electronics">
+                        <h3>Electronics</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/fashion.jpg" alt="Fashion">
+                        <h3>Fashion</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/kichenhome.jpg" alt="Home & Kitchen">
+                        <h3>Home & Kitchen</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/beauty.webp" alt="Beauty">
+                        <h3>Beauty</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/sport.jpg" alt="Sports">
+                        <h3>Sports</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/books.jpg" alt="Books">
+                        <h3>Books</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Accessories.jpg" alt="Accessories">
+                        <h3>Accessories</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid" id="product-grid">
+                    <!-- Products will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-indicators">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <img src="images/securepayment.ico" alt="Secure Payments">
+                        <h4>Secure Payments</h4>
+                    </div>
+                    <div class="trust-item">
+                        <img src="images/FastDelivary.ico" alt="Fast Delivery">
+                        <h4>Fast Delivery</h4>
+                    </div>
+                    <div class="trust-item">
+                        <img src="images/easyreturn.ico" alt="Easy Returns">
+                        <h4>Easy Returns</h4>
+                    </div>
+                    <div class="trust-item">
+                        <img src="images/support.ico" alt="24/7 Support">
+                        <h4>24/7 Support</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Join AiCart Insider Deals</h2>
+                <p>Get exclusive offers and discounts directly to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="helpcenter.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.ico" alt="Facebook"></a>
+                        <a href="#"><img src="images/xtwitter.ico" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram.ico" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
