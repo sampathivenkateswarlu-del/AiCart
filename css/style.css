@@ -70,9 +70,10 @@ body {
     font-weight: 700;
 }
 
-/* mobile nav toggle button (hidden by default) */
+/* mobile nav toggle button (hidden by default on desktop) */
 .menu-toggle {
     display: none;
+    cursor: pointer;
 }
 
 .logo-icon {
@@ -1319,10 +1320,6 @@ body {
     html, body {
         overflow-x: hidden;
     }
-    .menu-toggle {
-        /* ensure visible even if parent changes */
-        display: block !important;
-    }
 
     .header .container {
         flex-direction: column;
@@ -1332,6 +1329,8 @@ body {
         position: relative; /* for absolute toggle */
         align-items: flex-start; /* ensure items stack left */
     }
+
+    /* MOBILE MENU TOGGLE - Must be visible on mobile screens */
     .menu-toggle {
         display: block !important;
         font-size: 28px;
@@ -1340,12 +1339,16 @@ body {
         background: #FFFFFF;
         padding: 6px 8px;
         border-radius: 4px;
-        /* position top-right for easier visibility */
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        left: auto;
-        z-index: 2000; /* make sure it sits above other header elements */
+        border: 1px solid #ddd;
+        position: absolute !important;
+        top: 12px !important;
+        right: 15px !important;
+        left: auto !important;
+        z-index: 2000 !important;
+        width: 44px;
+        height: 44px;
+        line-height: 28px;
+        text-align: center;
     }
     .nav {
         width: 100%;
